@@ -30,7 +30,7 @@ var ProgressBar = React.createClass({
   },
 
   getPercentage: function (now, min, max) {
-    return Math.ceil((now - min) / (max - min) * 100);
+    return Math.round((now - min) / (max - min) * 100);
   },
 
   render: function () {
